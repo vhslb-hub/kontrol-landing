@@ -16,9 +16,9 @@ const footerLinks = {
     { label: "Contato", href: "#" },
   ],
   Legal: [
-    { label: "Termos de Uso", href: "#" },
-    { label: "Política de Privacidade", href: "#" },
-    { label: "LGPD", href: "#" },
+    { label: "Termos de Uso", href: "/termos" },
+    { label: "Política de Privacidade", href: "/privacidade" },
+    { label: "LGPD", href: "/lgpd" },
   ],
 };
 
@@ -55,10 +55,10 @@ function TwitterIcon() {
 }
 
 const socialLinks = [
-  { name: "Instagram", icon: InstagramIcon, href: "#" },
-  { name: "TikTok", icon: TikTokIcon, href: "#" },
-  { name: "LinkedIn", icon: LinkedInIcon, href: "#" },
-  { name: "Twitter/X", icon: TwitterIcon, href: "#" },
+  { name: "Instagram", icon: InstagramIcon, href: "https://www.instagram.com/kontrol.ia" },
+  { name: "TikTok", icon: TikTokIcon, href: "https://www.tiktok.com/kontrol.ia" },
+  { name: "LinkedIn", icon: LinkedInIcon, href: "https://www.linkedin.com/kontrol.ia" },
+  { name: "Twitter/X", icon: TwitterIcon, href: "https://www.x.com/kontrol.ia" },
 ];
 
 export default function Footer() {
@@ -86,6 +86,8 @@ export default function Footer() {
                   <motion.a
                     key={social.name}
                     href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label={social.name}
                     whileHover={{ y: -2 }}
                     transition={{ duration: 0.2 }}
