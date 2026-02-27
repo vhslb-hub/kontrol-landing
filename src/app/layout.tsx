@@ -8,6 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://kontrol.base44.app"),
   title: "Kontrol — Organização Financeira Inteligente",
   description:
     "O app que te dá controle total sobre receitas, despesas, investimentos e metas — tudo em um só lugar. Comece grátis por 14 dias.",
@@ -47,12 +48,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className="scroll-smooth">
-      <head>
-        <link
-          rel="icon"
-          href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='Arial' font-weight='900' fill='%23F97316'>K</text></svg>"
-        />
-      </head>
       <body className={`${inter.variable} font-sans antialiased`}>
         {children}
       </body>

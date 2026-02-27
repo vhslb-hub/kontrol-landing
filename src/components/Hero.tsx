@@ -69,7 +69,9 @@ export default function Hero() {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
               <a
-                href="#"
+                href="https://kontrol.base44.app/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-200 hover:shadow-xl hover:shadow-orange-200 hover:-translate-y-0.5"
               >
                 Começar Grátis — 14 dias free
@@ -79,7 +81,9 @@ export default function Hero() {
                 />
               </a>
               <a
-                href="#"
+                href="https://kontrol.base44.app/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-2.5 border-2 border-gray-200 hover:border-orange-300 text-gray-700 hover:text-orange-600 px-8 py-4 rounded-full font-bold text-lg transition-all duration-200 hover:bg-orange-50"
               >
                 <div className="w-7 h-7 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
@@ -129,7 +133,7 @@ export default function Hero() {
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
                   ))}
-                  <span className="text-xs text-gray-500 ml-1">4.8 na App Store</span>
+                  <span className="text-xs text-gray-500 ml-1">4.8 avaliação média</span>
                 </div>
               </div>
             </motion.div>

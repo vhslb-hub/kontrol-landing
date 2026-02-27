@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
 
 interface LegalLayoutProps {
@@ -28,7 +29,7 @@ export default function LegalLayout({
           </Link>
           <span className="text-gray-200">|</span>
           <Link href="/" className="flex items-center gap-1.5">
-            <span className="text-xl font-black text-orange-500">K.</span>
+            <Image src="/logo.png" alt="Kontrol" width={28} height={28} />
             <span className="text-sm font-bold text-gray-700">Kontrol</span>
           </Link>
         </div>
