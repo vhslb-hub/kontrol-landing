@@ -137,7 +137,9 @@ export default function HowItWorks() {
           className="text-center mt-16"
         >
           <a
-            href="#"
+            href="https://kontrol.base44.app/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-200 hover:shadow-xl hover:shadow-orange-200 hover:-translate-y-0.5"
           >
             Começar agora — é grátis

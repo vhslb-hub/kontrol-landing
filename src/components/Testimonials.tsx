@@ -149,15 +149,15 @@ export default function Testimonials() {
           className="mt-16 bg-gray-50 rounded-2xl p-8 flex flex-col sm:flex-row items-center justify-center gap-8 border border-gray-100"
         >
           <div className="text-center">
-            <p className="text-4xl font-black text-orange-500">4.8</p>
-            <StarRating count={5} />
-            <p className="text-gray-500 text-sm mt-1">App Store</p>
+            <p className="text-4xl font-black text-orange-500">10k+</p>
+            <p className="text-gray-700 font-semibold mt-1">usuários ativos</p>
+            <p className="text-gray-500 text-sm">e crescendo</p>
           </div>
           <div className="hidden sm:block w-px h-16 bg-gray-200" />
           <div className="text-center">
-            <p className="text-4xl font-black text-orange-500">4.7</p>
+            <p className="text-4xl font-black text-orange-500">4.8</p>
             <StarRating count={5} />
-            <p className="text-gray-500 text-sm mt-1">Google Play</p>
+            <p className="text-gray-500 text-sm mt-1">avaliação média</p>
           </div>
           <div className="hidden sm:block w-px h-16 bg-gray-200" />
           <div className="text-center">

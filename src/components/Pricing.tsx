@@ -225,7 +225,9 @@ export default function Pricing() {
 
                 {/* CTA Button */}
                 <a
-                  href="#"
+                  href="https://kontrol.base44.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`block text-center py-3.5 rounded-full font-bold text-base transition-all duration-200 mb-8 ${
                     plan.highlighted
                       ? "bg-orange-500 hover:bg-orange-600 text-white shadow-lg shadow-orange-200 hover:-translate-y-0.5"

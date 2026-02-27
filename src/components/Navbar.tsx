@@ -65,7 +65,7 @@ export default function Navbar() {
                 rel="noopener noreferrer"
                 className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-semibold text-sm transition-all duration-200 hover:shadow-lg hover:shadow-orange-200 hover:-translate-y-0.5"
               >
-                Baixar Grátis
+                Começar Grátis
               </a>
             </div>
 

@@ -18,7 +18,7 @@ const faqs = [
   {
     question: "Funciona em iPhone e Android?",
     answer:
-      "Sim! O Kontrol está disponível na App Store (iOS 14+) e Google Play (Android 8+). Também temos versão web para acessar pelo computador com todas as funcionalidades sincronizadas em tempo real.",
+      "Sim! O Kontrol é um Progressive Web App (PWA) que funciona em qualquer dispositivo com navegador — iPhone, Android ou computador. Basta acessar pelo celular e tocar em \"Adicionar à tela inicial\" para instalar e usar como um app nativo, sem precisar de App Store ou Google Play.",
   },
   {
     question: "Posso cancelar a qualquer momento?",
@@ -166,7 +166,7 @@ export default function FAQ() {
           <p className="text-gray-500 mb-4">
             Ainda tem dúvidas?{" "}
             <a
-              href="#"
+              href="mailto:suporte@kontrol.app"
               className="text-orange-500 font-semibold hover:underline"
             >
               Fale com nosso suporte

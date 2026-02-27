@@ -81,15 +81,13 @@ export default function Hero() {
                 />
               </a>
               <a
-                href="https://kontrol.base44.app/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#funcionalidades"
                 className="group inline-flex items-center justify-center gap-2.5 border-2 border-gray-200 hover:border-orange-300 text-gray-700 hover:text-orange-600 px-8 py-4 rounded-full font-bold text-lg transition-all duration-200 hover:bg-orange-50"
               >
                 <div className="w-7 h-7 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
                   <Play size={12} fill="currentColor" className="text-orange-500 ml-0.5" />
                 </div>
-                Ver Demo
+                Ver Funcionalidades
               </a>
             </motion.div>
 

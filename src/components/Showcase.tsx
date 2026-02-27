@@ -77,6 +77,7 @@ export default function Showcase() {
 
   return (
     <section
+      id="showcase"
       ref={ref}
       className="py-24 bg-[#0F172A] overflow-hidden"
     >
@@ -116,7 +117,8 @@ export default function Showcase() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex justify-center gap-2 mb-14 flex-wrap"
+          className="flex gap-2 mb-14 overflow-x-auto pb-1 justify-start sm:justify-center scrollbar-none"
+          style={{ WebkitOverflowScrolling: "touch" }}
         >
           {tabs.map((tab) => {
             const Icon = tab.icon;
