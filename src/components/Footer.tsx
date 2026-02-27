@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 const footerLinks = {
   Produto: [
@@ -71,7 +70,9 @@ export default function Footer() {
           {/* Brand column */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <Image src="/logo.png" alt="Kontrol" width={40} height={40} />
+              <div className="w-10 h-10 bg-orange-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                <span className="text-white font-black text-xl leading-none">K.</span>
+              </div>
               <span className="text-xl font-bold text-white">Kontrol</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs mb-6">

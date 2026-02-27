@@ -83,8 +83,8 @@ export default function HowItWorks() {
 
         {/* Steps */}
         <div ref={ref} className="relative">
-          {/* Connecting line (desktop) — alinhada ao centro dos círculos */}
-          <div className="hidden lg:block absolute top-[22px] left-[calc(16.67%+28px)] right-[calc(16.67%+28px)] h-0.5 bg-gradient-to-r from-orange-200 via-blue-200 to-green-200 z-0" />
+          {/* Connecting line (desktop) — centered over the circles */}
+          <div className="hidden lg:block absolute top-[22px] left-[16.67%] right-[16.67%] h-0.5 bg-gradient-to-r from-orange-200 via-blue-200 to-green-200 z-0" />
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12 relative z-10">
             {steps.map((step, index) => {
@@ -95,7 +95,7 @@ export default function HowItWorks() {
                   initial={{ opacity: 0, y: 50 }}
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.6, delay: index * 0.15 }}
-                  className="flex flex-col items-center text-center lg:items-start lg:text-left"
+                  className="flex flex-col items-center text-center"
                 >
                   {/* Número em círculo colorido */}
                   <div

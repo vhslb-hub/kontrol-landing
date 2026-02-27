@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import Image from "next/image";
 
 const navLinks = [
   { label: "Funcionalidades", href: "#funcionalidades" },
@@ -37,13 +36,9 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <a href="#" className="flex items-center gap-2 group">
-              <Image
-                src="/logo.png"
-                alt="Kontrol"
-                width={36}
-                height={36}
-                className="group-hover:scale-110 transition-transform duration-200"
-              />
+              <div className="w-9 h-9 bg-orange-500 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-200">
+                <span className="text-white font-black text-lg leading-none">K.</span>
+              </div>
               <span className="text-xl font-bold text-gray-900 hidden sm:block">
                 Kontrol
               </span>
