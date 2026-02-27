@@ -14,6 +14,7 @@ const steps = [
     color: "text-orange-500",
     bg: "bg-orange-50",
     border: "border-orange-200",
+    circleBg: "bg-orange-500",
   },
   {
     number: "02",
@@ -24,6 +25,7 @@ const steps = [
     color: "text-blue-500",
     bg: "bg-blue-50",
     border: "border-blue-200",
+    circleBg: "bg-blue-500",
   },
   {
     number: "03",
@@ -34,6 +36,7 @@ const steps = [
     color: "text-green-600",
     bg: "bg-green-50",
     border: "border-green-200",
+    circleBg: "bg-green-600",
   },
 ];
 
@@ -80,10 +83,10 @@ export default function HowItWorks() {
 
         {/* Steps */}
         <div ref={ref} className="relative">
-          {/* Connecting line (desktop) */}
-          <div className="hidden lg:block absolute top-[72px] left-[calc(16.67%+20px)] right-[calc(16.67%+20px)] h-0.5 bg-gradient-to-r from-orange-200 via-blue-200 to-green-200 z-0" />
+          {/* Connecting line (desktop) — alinhada ao centro dos círculos */}
+          <div className="hidden lg:block absolute top-[22px] left-[calc(16.67%+28px)] right-[calc(16.67%+28px)] h-0.5 bg-gradient-to-r from-orange-200 via-blue-200 to-green-200 z-0" />
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12 relative z-10">
             {steps.map((step, index) => {
               const Icon = step.icon;
               return (
@@ -94,34 +97,28 @@ export default function HowItWorks() {
                   transition={{ duration: 0.6, delay: index * 0.15 }}
                   className="flex flex-col items-center text-center lg:items-start lg:text-left"
                 >
-                  {/* Number + Icon */}
-                  <div className="relative mb-6">
-                    {/* Big number background */}
-                    <span
-                      className={`text-8xl font-black ${step.color} opacity-10 leading-none select-none absolute -top-4 -left-2 lg:-left-4`}
-                    >
+                  {/* Número em círculo colorido */}
+                  <div
+                    className={`w-11 h-11 ${step.circleBg} rounded-full flex items-center justify-center mb-5 shadow-md flex-shrink-0`}
+                  >
+                    <span className="text-white font-black text-base leading-none">
                       {step.number}
                     </span>
-
-                    {/* Icon circle */}
-                    <div
-                      className={`relative w-16 h-16 ${step.bg} border-2 ${step.border} rounded-2xl flex items-center justify-center z-10`}
-                    >
-                      <Icon size={28} className={step.color} strokeWidth={1.75} />
-                    </div>
                   </div>
 
-                  {/* Step number label */}
-                  <p className={`text-sm font-bold ${step.color} mb-2 uppercase tracking-wide`}>
-                    Passo {step.number}
-                  </p>
+                  {/* Ícone */}
+                  <div
+                    className={`w-16 h-16 ${step.bg} border-2 ${step.border} rounded-2xl flex items-center justify-center mb-5`}
+                  >
+                    <Icon size={28} className={step.color} strokeWidth={1.75} />
+                  </div>
 
-                  {/* Title */}
+                  {/* Título */}
                   <h3 className="text-2xl font-black text-gray-900 mb-3">
                     {step.title}
                   </h3>
 
-                  {/* Description */}
+                  {/* Descrição */}
                   <p className="text-gray-500 leading-relaxed">
                     {step.description}
                   </p>
